@@ -1,0 +1,113 @@
+package com.sxt.IO;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+public class IOTest09 {
+	public static void main(String[] args) {
+		byte[] dates = fileToByteArray("C://1//1.png") ;
+		System.out.println(dates.length);
+		 byteArrayToFile(dates,"C://1//2.png");
+	}
+	
+	/*
+	 * 1、图片读取到数组
+	 * 		1）图片到程序		FileInputStream
+	 * 		2）程序到字节数组		ByteOutputStream
+	 */
+	public static byte[] fileToByteArray(String filePath) {
+		//创建源
+		File src = new File(filePath);
+		//选择流
+		InputStream iStream = null;
+		ByteArrayOutputStream boStream = null;
+		try {
+			iStream = new FileInputStream(src);
+			boStream = new ByteArrayOutputStream();
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		//操作
+		byte[] flush = new byte[1024];
+		int len = -1;
+		try {
+			while ((len=iStream.read(flush))!=-1) {
+				boStream.write(flush,0,len);				//写入到字节数组中
+			}
+			boStream.flush();
+			return boStream.toByteArray();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			if (null!=iStream) {
+				try {
+					iStream.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+		return null;
+	}
+	
+	
+	/*
+	 * 1、数组读取到图片
+	 * 		1）字节数组到程序		ByteInputStream
+	 * 		2）程序到图片		FileOutputStream
+	 */
+	public static void byteArrayToFile(byte[ ] src,String filePath) {
+		//创建源
+		File dest = new File(filePath);
+		//选择流
+		InputStream iStream = null;
+		OutputStream oStream = null;
+//		ByteArrayInputStream biStream = null; 
+		try {
+			oStream = new FileOutputStream(dest);
+			iStream = new ByteArrayInputStream(src);
+			//操作
+			byte[] flush = new byte[1024];
+			int len = -1;
+			while ((len=iStream.read(flush))!=-1) {
+				oStream.write(flush, 0, len);				//写出到文件
+				
+			}
+			oStream.flush();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			if (null!=iStream) {
+				try {
+					iStream.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			if (null!=oStream) {
+				try {
+					oStream.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+
+/**
+ * 测试if单选择结构
+ * @author Administrator
+ *
+ */
+
+public class Testif {
+	public static void main(String[] args) {
+		
+		/**
+		double d = Math.random();				//Math.random()产生一个0-1（不包含1）之间的随机数
+		System.out.println(d);
+		
+		int i = (int)(6*Math.random()+1);
+		System.out.println(i);
+		if (i<=3) {
+			System.out.println("小");
+		}
+		**/
+		
+		/**通过三个掷骰子，看看今天手气如何*/
+		
+		int i = (int)(6*Math.random()+1);
+		int j = (int)(6*Math.random()+1);
+		int k = (int)(6*Math.random()+1);
+		int count = i+j+k;
+		
+		System.out.println(count);
+		
+		if (count>15) {
+			System.out.println("今天手气不错");
+		}
+		if (count<=15&&count>=10) {
+			System.out.println("今天手气一般");
+		}
+		if (count<10) {
+			System.out.println("今天手气不怎么样");
+		}
+		
+	}
+}

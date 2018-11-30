@@ -1,0 +1,28 @@
+/**
+ * 测试while嵌套
+ * @author Administrator
+ *
+ */
+public class TestWhileQianTao {
+	public static void main(String[] args) {
+		
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 0; j <= 5; j++) {		//
+				System.out.print(i+"\t");				//ln换行
+			}
+			System.out.println();
+		}
+		
+		
+		System.out.println("####################");
+		
+		//乘法表
+		for (int n = 1; n <=9; n++) {					//外循环			
+			for (int m = 1; m <=n; m++) {			//内循环			当m>n时跳出换行
+				System.out.print(m+"*"+n+"="+(m*n)+"\t");
+			}
+			System.out.println();
+		}
+			
+	}
+}

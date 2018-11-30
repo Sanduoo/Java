@@ -1,0 +1,43 @@
+package cn.sxt.Four;
+
+/**
+ * 探讨try,catch,finaly,return的执行顺序
+ * 
+ * 1.执行try,catch，给返回值赋值
+ * 2.执行finaly
+ * 3.return
+ */
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class TryCatchFinalyReturn {
+	public static void main(String[] args) {
+		
+		String string = new TryCatchFinalyReturn().openFile();
+		System.out.println(string);
+			
+	}
+	
+	String openFile() {
+		try {
+			System.out.println("第一步");
+			FileInputStream file = new FileInputStream("d:/a.txt");
+			int a = file.read();
+			System.out.println("第二步");
+			return"step1";
+		} catch (FileNotFoundException e ) {
+			System.out.println("catching!!!");
+			e.printStackTrace();
+			return"step2";
+		}catch (IOException e) {
+			e.printStackTrace();
+			return"step3";
+		}finally {
+			System.out.println("finaly!!!");
+//			return"step finaly";				//不要在finaly中使用return，会覆盖之前的return
+		}
+		
+	}
+	
+}

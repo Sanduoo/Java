@@ -1,0 +1,28 @@
+/**
+ * ²âÊÔwhileÇ¶Ì×
+ * @author Administrator
+ *
+ */
+public class TestWhileQianTao {
+	public static void main(String[] args) {
+		
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 0; j <= 5; j++) {		//
+				System.out.print(i+"\t");				//ln»»ĞĞ
+			}
+			System.out.println();
+		}
+		
+		
+		System.out.println("####################");
+		
+		//³Ë·¨±í
+		for (int n = 1; n <=9; n++) {
+			for (int m = 1; m <=9; m++) {
+				System.out.print(m+"*"+n+"="+(m*n)+"\t");
+			}
+			System.out.println();
+		}
+			
+	}
+}

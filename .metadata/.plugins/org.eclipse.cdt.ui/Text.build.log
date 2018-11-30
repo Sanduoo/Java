@@ -1,0 +1,9 @@
+11:30:58 **** Build of configuration Default for project Text ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;;C:\Android;C:\Windows\System32;C:\Users\q\AppData\Local\Microsoft\WindowsApps;;C:\Users\q\Desktop\eclipse-java-photon-R-win32-x86_64\eclipse;]
+
+11:30:59 Build Failed. 1 errors, 0 warnings. (took 231ms)
+

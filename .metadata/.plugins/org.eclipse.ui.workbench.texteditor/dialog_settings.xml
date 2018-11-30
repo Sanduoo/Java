@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="writer" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="true" key="wholeword"/>
+		<list key="findhistory">
+			<item value="oStream"/>
+			<item value="OutputStream"/>
+			<item value="E:/others/"/>
+			<item value="T1"/>
+			<item value="T2"/>
+			<item value="equals"/>
+		</list>
+		<list key="replacehistory">
+			<item value="writer"/>
+			<item value="write"/>
+			<item value="Write"/>
+			<item value="c:/WeChat Files/"/>
+			<item value="T"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="405" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="511" key="DIALOG_HEIGHT"/>
+		<item value="837" key="DIALOG_X_ORIGIN"/>
+		<item value="432" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

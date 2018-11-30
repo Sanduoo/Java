@@ -1,0 +1,23 @@
+import java.time.Month;
+
+/**
+ * 测试Switch语句
+ * @author Administrator
+ *
+ */
+public class TestSwitch {
+	public static void main(String[] args) {
+		int month = (int)(1+12*Math.random());
+		switch (month) {
+		case 1:
+			System.out.println("一月份，过新年！");
+			break;
+		case 2:
+			System.out.println("二月份，开春了！");
+			break;
+		default:
+			System.out.println("都挺好的！");
+			break;
+		}
+	}
+}

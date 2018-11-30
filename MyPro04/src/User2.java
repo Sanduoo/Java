@@ -1,0 +1,39 @@
+
+/**
+ * 测试static关键字的用法
+ * @author Administrator
+ *
+ */
+
+public class User2 {
+	int id;
+	String name;
+	String pwd;
+	
+	static String company = "北京尚学堂";
+	
+	public User2(int id,String name) {
+		this.id = id;
+		this.name = name;
+	}
+	
+	public void login() {
+		printCompany();
+		System.out.println(company);
+		System.out.println("登录："+name);
+	}
+	
+	public static void printCompany() {
+	//login() 												//调用非静态成员，编译就会报错
+		System.out.println(company);
+	}
+	
+	public static void main(String[] args) {
+		User2 u = new User2(101, "许三多");
+		User2.printCompany();
+		User2.company = "杭州阿里爸爸";
+		User2.printCompany();
+	}
+	
+	
+}

@@ -1,0 +1,11 @@
+/**
+ * 测试if单选择结构
+ * @author Administrator
+ *
+ */
+public class Testif {
+	public static void main(String[] args) {
+		double d = Math.random();
+		System.out.println(d);
+	}
+}

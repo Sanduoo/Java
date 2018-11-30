@@ -1,0 +1,13 @@
+/**
+ * 测试if单选择结构
+ * @author Administrator
+ *
+ */
+public class Testif {
+	public static void main(String[] args) {
+		double d = Math.random();				//Math.random()产生一个0-1（不包含1）之间的随机数
+		System.out.println(d);
+		System.out.println(6*Math.random());
+		
+	}
+}

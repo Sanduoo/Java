@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;cn.VisualizationCalendar&apos; to &apos;cn.SanDuo.VisualizationCalendar&apos;&#x0D;&#x0A;- Original project: &apos;Visualization Calendar&apos;&#x0D;&#x0A;- Original element: &apos;Visualization Calendar/src/cn.VisualizationCalendar&apos;&#x0D;&#x0A;- Renamed element: &apos;Visualization Calendar/src/cn.SanDuo.VisualizationCalendar&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;cn.VisualizationCalendar&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;cn.VisualizationCalendar" name="cn.SanDuo.VisualizationCalendar" qualified="false" references="true" stamp="1533627336488" textual="false" version="1.0"/>
+</session>

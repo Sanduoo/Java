@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.sxt.IO.IOTest&apos; to &apos;IOTest08&apos;&#x0D;&#x0A;- Original project: &apos;Mycode08(IO)&apos;&#x0D;&#x0A;- Original element: &apos;com.sxt.IO.IOTest&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sxt.IO.IOTest08&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IOTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.sxt.IO{IOTest.java[IOTest" matchStrategy="1" name="IOTest08" qualified="false" references="true" similarDeclarations="false" stamp="1540520929140" textual="false" version="1.0"/>
+</session>

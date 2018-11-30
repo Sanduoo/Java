@@ -1,0 +1,11 @@
+/**
+ * 测试continue
+ * 用于结束本次循环，继续下一次循环
+ * @author Administrator
+ *
+ */
+public class TestContinue {
+	public static void main(String[] args) {
+		
+	}
+}
